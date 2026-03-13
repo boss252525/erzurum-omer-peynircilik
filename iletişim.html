@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERZURUM ÖMER PEYNİRCİLİK</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Navbar Tasarımı */
+        .bg-black { background-color: #000000 !important; }
+        
+        .dropdown-menu {
+            background-color: #1a1a1a !important;
+            border: 1px solid #444;
+        }
+
+        .dropdown-item { color: white !important; transition: 0.3s; }
+        .dropdown-item:hover { background-color: white !important; color: black !important; }
+        .dropdown-divider { border-top: 1px solid rgba(255, 255, 255, 0.2) !important; }
+
+        /* KART TASARIMI - Muazzam Düzen Burada */
+        .contact-card {
+            background-color: #111; /* Tam siyah yerine çok hafif gri derinlik katar */
+            border: 1px solid #333;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.1); /* Kırmızımsı hafif gölge */
+            transition: 0.4s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            border-color: red;
+        }
+
+        .card-header {
+            background-color: transparent !important;
+            color: #ff0000;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-bottom: 2px solid red !important;
+            padding: 20px;
+        }
+
+        /* Liste Elemanları */
+        .list-group-item {
+            background-color: transparent !important;
+            color: #ccc !important;
+            border-color: #222 !important;
+            padding: 15px 20px;
+            transition: 0.2s;
+        }
+
+        .list-group-item:hover {
+            color: white !important;
+            background-color: #1a1a1a !important;
+        }
+
+        /* Responsive Ortalama */
+        .full-center {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black shadow-lg">
+    <div class="container">
+        <a class="navbar-brand" href="http://127.0.0.1:5500/menu.html">
+            <img src="/Anger_Yeni_Loogo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        </a>
+        <a class="navbar-brand pr-4" href="http://127.0.0.1:5500/menu.html?#">ERZURUM ÖMER PEYNİRCİLİK</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/menu.html?#">ANA SAYFA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/ileti%C5%9Fim.html">İLETİŞİM</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ÜRÜNLERİMİZ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://127.0.0.1:5500/peynir.html">Peynir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://127.0.0.1:5500/ya%C4%9F.html">Yağ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://127.0.0.1:5500/s%C3%BCt.html">Süt</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="full-center">
+        <div class="row w-100 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                
+                <div class="text-center mb-4">
+                    <h2 class="font-weight-light">Bize Ulaşın</h2>
+                    <div style="height: 3px; width: 50px; background: red; margin: 10px auto;"></div>
+                </div>
+
+                <div class="card contact-card">
+                    <div class="card-header text-center">
+                        İLETİŞİM ADRESLERİMİZ
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">📍 Erzurum Merkez Mağaza</li>
+                        <li class="list-group-item">📞 +90 5XX XXX XX XX</li>
+                        <li class="list-group-item">📧 info@omerpeynircilik.com</li>
+                        <li class="list-group-item">🕒 08:00 - 20:00 Hizmetinizdeyiz</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
